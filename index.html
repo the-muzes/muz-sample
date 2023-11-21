@@ -1,0 +1,1210 @@
+<html lang="en">
+
+<head><meta name="ROBOTS" content="INDEX,FOLLOW"><meta name="keywords" content=""><meta name="description" content="">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Recall</title>
+
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/x-icon" href="https://www.krups.de/favicon.ico">
+  <link rel="stylesheet" href="https://use.typekit.net/rzm7yuc.css">
+
+
+ <style type="text/css">
+ /*
+--- 01 TYPOGRAPHY SYSTEM
+
+- Font sizes (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+
+- Font weights
+Default:
+Medium:
+Semi-bold:
+Bold:
+
+- Line heights
+
+Default : 1
+medium : 1.2
+high : 1.5
+higher : 1.8
+- Letter spacing
+
+--- 02 COLORS
+
+- header: #eeedf2
+- Tints:
+- Shades:
+
+- Accents:
+- Greys : #868686
+          #6c6c6c
+
+--- 05 SHADOWS
+box-shadow: 0 0 6px #bbbbbb;
+
+--- 06 BORDER-RADIUS
+
+--- 07 WHITESPACE
+
+- Spacing system (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+*/
+
+
+/* Default padding / Margin */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'Inter', Arial, sans-serif;
+
+  line-height: 1;
+  color: #000000;
+  font-weight: 400;
+}
+.hide {
+    display: none!important;
+}
+
+.grid {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  column-gap: 1.2rem;
+
+}
+
+.grid--3--col {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.grid--5--col {
+  grid-template-columns: repeat(5, 1fr);
+}
+
+.grid--6--col {
+  grid-template-columns: repeat(6, 1fr);
+}
+
+.list-style {
+  list-style: none;
+}
+
+*:focus {
+  outline: none;
+  /* outline: 4px dotted #e67e22; */
+  /* outline-offset: 8px; */
+  /* box-shadow: 0 0 0 0.8rem rgba(230, 125, 34, 0.5); */
+}
+
+
+  /*====================*/
+/* HEADER SECTION */
+/*====================*/
+
+.section-header {
+  background-color: #eeedf2;
+  box-shadow: 0 0 6px #bbbbbb;
+}
+
+.header-container {
+  max-width: 94rem;
+  margin: 0 auto;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+
+
+.menu-icon {
+  width: 3rem;
+  height: 3rem;
+  color: #868686;
+  cursor: pointer;
+}
+
+.menu-text {
+  color: #868686;
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+.logo-img {
+  max-height: 6rem;
+  display: inline-block;
+}
+
+.menu {
+  justify-self: left;
+}
+
+.logo {
+  justify-self: center;
+}
+
+.nav {
+  justify-self: right;
+}
+
+.main-nav {
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav-text:link,
+.nav-text:visited {
+  font-size: 1.2rem;
+  color: #868686;
+  border-left: 1px solid #c4c4c4;
+  padding-left: 1.2rem;
+  line-height: 1.5;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.nav-text:hover,
+.nav-text:active {
+  color: #e1172b;
+}
+
+.nav-text-line {
+  border-right: 1px solid #c4c4c4;
+  padding-right: 1.2rem;
+}
+
+.nav-icon {
+  width: 2.5rem;
+  height: 2.5rem;
+  color: #868686;
+}
+
+.nav-icon:hover {
+  color: #e1172b;
+}
+
+
+/*====================*/
+/* HEADER SECTION */
+/*====================*/
+
+.section-navigation {
+  padding: 2rem 2rem 1.5rem;
+}
+
+.navigation-box {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  margin-bottom: 7.2rem;
+}
+
+
+.navigation-text:link,
+.navigation-text:visited {
+  font-size: 1.3rem;
+  color: #6c6c6c;
+  display: inline-block;
+  text-decoration: none;
+
+}
+
+.navigation-text:hover,
+.navigation-text:active {
+  color: #e1172b;
+}
+
+.nav-text-line-right {
+  border-left: 1px solid #c4c4c4;
+  padding-left: 2rem;
+}
+
+.navigation-text2:link,
+.navigation-text2:visited {
+  color: #888888;
+  text-decoration: underline;
+  font-size: 1.1rem;
+}
+
+.navigation-text2:hover,
+.navigation-text2:active {
+  color: #888888;
+  text-decoration: none;
+}
+
+.arrow-color {
+  color: #888888;
+}
+
+
+/*====================*/
+/* CTA SECTION */
+/*====================*/
+
+.homepage-link:link,
+.homepage-link:visited {
+  color: #595959;
+  text-shadow: #363636 0 0 0.1rem;
+  text-decoration: underline;
+
+}
+
+.homepage-link:hover,
+.homepage-link:active {
+  color: #c21000;
+}
+
+.section-cta {
+  background-image: url("https://image.email.groupeseb.com/lib/fe3111717564047c7d1d76/m/2/b28ce89a-7fab-4f2d-b86b-4f4d6b3552e6.jpg");
+  background-size: cover;
+  background-position: 50%;
+  background-repeat: no-repeat;
+  padding: 7.5rem 0;
+
+}
+
+.cta-container {
+  max-width: 160rem;
+  margin: 0 auto;
+
+}
+
+.cta-headline {
+  font-size: 8rem;
+  line-height: 1.2;
+  color: #ffffff;
+  text-align: center;
+  font-family: 'Inter', Arial, sans-serif;
+  display: block;
+  padding-top: 3.6rem;
+  padding-bottom: 3.6rem;
+}
+  .cta-first-headline{
+   font-size: 5.6rem;
+text-transform: uppercase;
+  }
+
+.headline-container {
+  position: relative;
+  max-width: 120rem;
+
+  margin: 0 auto;
+}
+
+.cta-red-headerline {
+  color: #ff1027;
+}
+
+.cta-box {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 3rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-background-color {
+  background-color: rgba(255, 255, 255, 0.75);
+  padding: 6.5rem;
+  margin-right: 11.5rem;
+  margin-top: 3rem;
+
+}
+
+.form-background-color h1 {
+  color: #da7909;
+  margin-bottom: 2rem;
+  font-size: 2.2rem;
+  font-family: 'Inter', Arial, sans-serif;
+  text-transform: uppercase;
+  font-weight: 800;
+  line-height: 1.1;
+}
+
+
+
+.form-background-color input,
+.form-background-color select {
+  border: 1px solid #63636d;
+  border-radius: 0;
+  height: 4.2rem;
+  font-family: Tahoma, Arial, Sans-serif !important;
+  color: #000000;
+  padding: 2rem 2rem 0.5rem 0.5rem;
+  display: block;
+  margin-bottom: 2rem;
+  width: 100%;
+  font-size: 1.3rem;
+  font-family: inherit;
+  letter-spacing: 0.2px;
+  background-color: #ffffff;
+}
+
+.form-background-color select {
+  width: 11rem;
+  color: #000000;
+}
+
+.form-background-color button {
+
+  background-color: #da7909;
+  font-family: 'Inter', Arial, sans-serif;
+  color: #ffffff;
+  border: none;
+  font-weight: 800;
+  text-transform: uppercase;
+  width: 100%;
+  padding: 1.2rem 3rem;
+  border-radius: 1.5rem;
+  cursor: pointer;
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+  font-size: 1.9rem;
+}
+
+.checkbox-flex {
+  display: flex;
+  gap: 2.5rem;
+  margin-top: 1.5rem;
+}
+
+.cta-text {
+  color: #da7909;
+  font-size: 1.6rem;
+  line-height: 2rem;
+  font-family: 'Inter', Arial, sans-serif;
+}
+
+.form-background-color label {
+  font-family: 'Inter', Arial, sans-serif;
+  font-size: 1.1rem;
+  line-height: 1.3;
+  max-width: 90%;
+  cursor: pointer;
+  margin-bottom: 2rem;
+}
+
+input[type='checkbox'] {
+
+  height: 20px;
+  width: 20px;
+  cursor: pointer;
+}
+
+
+/*====================*/
+/* SLIDER */
+/*====================*/
+
+
+.CSSgal {
+  position: relative;
+  overflow: hidden;
+
+  /* Or set a fixed height */
+}
+
+/* SLIDER */
+
+.slider_middle {
+  justify-content: center;
+  align-items: center;
+ text-align: center !important;
+}
+
+.mySlides {
+  display: none;
+}
+  .mySlides a{
+   text-align: center; !important;
+   color: #fff !important;
+   margin: 18px !important;
+   text-decoration: none !important;
+  }
+   .mySlides h3{
+   text-align: center; !important;
+   color: #fff !important;
+   margin: 18px !important;
+   font-size: 1.8rem;
+line-height: 1.2em;
+  }
+
+img {
+  vertical-align: middle;
+}
+
+/* Slideshow container */
+.slideshow-container {
+
+  max-width: 550px;
+  position: relative;
+  margin: auto;
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+  .second-line {
+   text-align: center !important;
+   color: #da7909;
+   font-family: 'Inter', Arial, sans-serif;
+  }
+  .slider-heading h3{
+   text-align: center !important;
+   color: #fff !important;
+  }
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: rgba(255, 255, 255, 0.75);
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #ffffff;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {
+    opacity: .4
+  }
+
+  to {
+    opacity: 1
+  }
+}
+
+
+
+/* More slides? Add here more rules */
+
+.slide {
+  width: 100%;
+  max-width: 550px;
+  height: auto;
+  text-align: center !important;
+}
+
+
+/*====================*/
+/* ICON SECTION */
+/*====================*/
+
+
+.section-icon {
+  padding: 4rem 0;
+}
+
+.container-icon {
+  max-width: 100%;
+  margin: 0 16rem;
+}
+
+.grid--5--icon {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  column-gap: 8rem;
+}
+
+.icon-img {
+  width: 4.8rem;
+  height: 4.8rem;
+
+}
+
+.center-icon-content {
+  text-align: center;
+}
+
+.icon-headline:link,
+.icon-headline:visited {
+  color: #ff1027;
+  font-size: 1.4rem;
+  line-height: 1.2;
+  margin-top: 1rem 0;
+  padding: 0px 3rem;
+  margin-top: 1rem;
+  font-weight: 600;
+  text-decoration: none;
+  display: inline-block;
+  min-height: 3.2rem;
+}
+
+.icon-description {
+  font-size: 1.2rem;
+  color: #888888;
+  margin-top: 1.5rem;
+  line-height: 1.5;
+  padding: 0 1.2rem;
+}
+
+.icon-img:hover {
+  opacity: 0.6;
+}
+
+/*====================*/
+/* FOOTER SECTION */
+/*====================*/
+
+.footer-box {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  column-gap: 7rem;
+}
+
+.section-footer {
+  background-color: #eeedf2;
+  border-top: 1px solid #c2c1bf;
+}
+
+.footer-container {
+  max-width: 94rem;
+  margin: 0 auto;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.footer-heading:link,
+.footer-heading:visited {
+  font-family: 'Inter', Arial, sans-serif;
+  font-weight: 400;
+  font-size: 1.1rem;
+  line-height: 1.3;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #909090;
+}
+
+.footer-heading:active {
+  text-decoration: underline;
+}
+
+.footer-heading1 {
+  font-family: 'Inter', Arial, sans-serif;
+  font-weight: 400;
+  font-size: 1.1rem;
+  line-height: 1.3;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #909090;
+}
+
+.footer-nav:link,
+.footer-nav:visited {
+  color: #909090;
+  text-decoration: none;
+  font-size: 1rem;
+  line-height: 1.3;
+}
+
+.footer-nav:active {
+  text-decoration: underline;
+}
+
+.grid--7 {
+  grid-column: 5 / 6;
+}
+
+.footer-border {
+  border-top: 1px solid #dadada;
+}
+
+.footer-nav img {
+  max-width: 100%;
+}
+
+/* .footer-nav1 {
+  width: 100%;
+  grid-column: 6 / -1;
+} */
+
+
+/* .footer-box1 {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  column-gap: 7rem;
+}
+
+.footer-container1 {
+  width: 94rem;
+  margin: 0 auto;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+} */
+
+/* .footer-bg {
+  background-image: url(https://image.email.groupeseb.com/lib/fe3611717564047d721177/m/1/ffc3838e-2bc5-4eba-bca3-bd15f1f3fedd.jpg);
+  background-position: top center;
+  overflow: auto;
+} */
+
+.footer-icon-image {
+  transform: translate(0, 0);
+}
+
+
+.footer-nav-container {
+
+  max-width: 92.5rem;
+  margin: 0 auto;
+}
+
+.footer-nav-box {
+  display: grid;
+  grid-template-columns: 4fr 1fr;
+  justify-content: center;
+}
+
+.footer-navigation:link,
+.footer-navigation:visited {
+  color: #909090;
+  text-decoration: none;
+  font-size: 1rem;
+  line-height: 1.3;
+}
+
+.footer-navigation:active {
+  text-decoration: underline;
+}
+
+.footer-links span {
+  color: #909090;
+}
+
+.footer-logo {
+  width: 8.6rem;
+  height: auto;
+  display: block;
+  margin-bottom: 1rem;
+  margin-top: 2rem;
+}
+
+.footer-map-img {
+  width: 8.6rem;
+  height: auto;
+  display: block;
+  margin-bottom: 2.4rem;
+}
+
+.footer-icons {
+  justify-self: right;
+  margin-right: 3rem;
+}
+
+.link-style {
+  text-align: center;
+  margin-bottom: 1rem;
+  display: block;
+}
+
+
+
+  @media (max-width: 94em) {
+
+  .form-background-color {
+    margin-right: 1.5rem;
+  }
+   .slide {
+    width: 90% !important;
+    height: auto !important;
+   }
+.slideshow-container {
+
+  padding-left: 20px !important;
+}
+}
+
+
+
+@media (max-width: 81em) {
+  .grid--5--icon {
+    grid-template-columns: repeat(6, 1fr);
+    column-gap: 2.4rem;
+  }
+
+  .GARANTIE-col {
+    grid-row: 1;
+    grid-column: span 2;
+  }
+
+  .REPARATUREN-col {
+    grid-row: 1;
+    grid-column: span 2;
+  }
+
+  .BEDIENUNGS-col {
+    grid-row: 1;
+    grid-column: span 2;
+  }
+
+  .HÄUFIG-col {
+    grid-column: span 3;
+    margin-top: 5rem;
+    width: 64%;
+    justify-self: right;
+  }
+
+  .KONTAKTSEITE-col {
+    grid-column: span 3;
+    margin-top: 5rem;
+    width: 64%;
+  }
+
+  .icon-headline:link,
+  .icon-headline:visited {
+    padding: 0;
+  }
+
+  .icon-description {
+    padding: 0;
+  }
+
+  .container-icon {
+    margin: 0 4rem;
+  }
+
+}
+
+@media (max-width:63em) {
+
+
+  .grid--3--col {
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 2.4rem;
+  }
+
+  .logo {
+    justify-self: right;
+    margin-right: 2rem;
+  }
+
+  .menu {
+    margin-left: 2rem;
+  }
+
+  .nav {
+    grid-column: 1 / -1;
+    justify-self: center;
+  }
+
+  .footer-box {
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 3.2rem;
+    row-gap: 2rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
+
+  .grid--7 {
+
+    grid-column: 1 / 2;
+  }
+
+  .nav-text-border:link {
+    border-left: 0px;
+    padding-left: 0;
+  }
+
+  .navigation-box {
+    flex-wrap: wrap;
+  }
+
+  .footer-links {
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
+
+  .cta-box {
+    grid-template-columns: 1fr;
+  }
+
+  .form-background-color {
+    max-width: 65rem;
+    margin: 3rem auto;
+    padding: 6.5rem;
+  }
+
+  .slide {
+    padding-top: 0.5rem;
+  }
+
+  .cta-headline {
+    font-size: 5.5rem;
+  }
+ .cta-first-headline{
+   font-size: 4.5rem;
+
+  }
+
+  .section-cta {
+    padding: 4rem 0;
+  }
+ .slider-heading {
+  display: none !important;
+ }
+ .second-line {
+  display: none !important;
+ }
+}
+
+@media (max-width:44em) {
+
+  .headline-container {
+    margin: 0 3rem;
+  }
+
+  .cta-headline {
+    font-size: 4.3rem;
+  }
+ .cta-first-headline{
+   font-size: 3.9rem;
+
+  }
+
+}
+
+
+@media (max-width:44em) {
+
+  .form-background-color {
+    max-width: 100%;
+    margin: 3rem 2rem 0;
+    padding: 2.5rem;
+  }
+
+  .form-background-color label {
+    margin-bottom: 0;
+    font-size: 1.06rem;
+    line-height: 1.3rem;
+  }
+
+  .checkbox-flex {
+    gap: 1rem !important;
+
+  }
+
+  .CSSgal {
+    padding-left: 30px;
+    padding-right: 30px;
+
+  }
+
+  .cta-headline {
+    font-size: 4.3rem;
+  }
+ .cta-first-headline{
+   font-size: 3.9rem;
+
+  }
+
+}
+
+@media (max-width:38em) {
+  .cta-headline {
+    font-size: 3.5rem;
+    line-height: 1.2;
+    color: #ffffff;
+    text-align: center;
+    font-family: 'Inter', Arial, sans-serif;
+    display: block;
+    padding-top: 3.6rem;
+    padding-bottom: 3.6rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+.cta-first-headline{
+   font-size: 2.9rem;
+
+  }
+  .headline-container {
+    margin: 0 3rem;
+  }
+
+  .slide {
+    width: 90%;
+    height: auto;
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+/*
+.form-background-color {
+    max-width: 100%;
+    margin: 3rem 2rem 0;
+    padding: 3.0rem;
+  }
+*/
+}
+
+@media (max-width:30em) {
+
+  .navigation-text:link,
+  .navigation-text:visited {
+    font-size: 1.1rem;
+  }
+
+  .icon-img {
+    width: 3rem;
+    height: 3rem;
+
+  }
+
+  .cta-headline {
+    font-size: 3.2rem;
+  }
+.cta-first-headline{
+   font-size: 3.0rem;
+
+  }
+  .icon-headline:link,
+  .icon-headline:visited {
+    font-size: 1rem;
+  }
+
+  .container-icon {
+    margin: 0 1rem;
+  }
+
+  .icon-description {
+    font-size: 0.9rem;
+
+  }
+
+  .CSSgal {
+    padding-left: 40px;
+    padding-right: 40px;
+
+  }
+
+  .slide {
+    width: 90%;
+    height: auto;
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+ .form-background-color button {
+  font-size: 1.5rem;
+ }
+
+}
+@media (max-width:22em) {
+ .cta-headline {
+  font-size: 2.4rem;
+ }
+ .cta-first-headline{
+  font-size: 2.4rem;
+ }
+  }
+ </style>
+
+
+  <!-- RECAPTCHA -->
+
+
+  <!-- RECAPTCHA -->
+
+
+ <script src="https://www.google.com/recaptcha/api.js"></script>
+
+
+  <!-- RECAPTCHA -->
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  <script src="https://www.tefal-info.com/vendors/jquery/jquery-3.3.1.min.js"></script>
+
+
+</head>
+
+<body>
+
+
+  <main>
+
+    <section class="section-cta">
+      <div class="cta-container">
+        <div class="headline-container">
+          <h1 class="cta-headline"><span class="cta-first-headline">Recall Beertender</span> <br />
+            Lorem ipsum GitHub :
+          </h1>
+        </div>
+        <div class="cta-box">
+          <div class="slider_middle">
+            <div class="slideshow-container">
+
+              <div class="mySlides fade">
+                <a href="https://www.krups.at/p/intuition-preference-ea875e/8010000986" target="_blank">
+     <h3 class="slider-heading">INUITITION PREFERENCE+</h3>
+     <h3><span class="second-line">VIELFÄLTIGE KAFFEE-SPEZIALITÄTEN</span></h3>
+     <img src="https://image.email.groupeseb.com/lib/fe3111717564047c7d1d76/m/2/57d2f1ae-e2aa-4164-b026-dbfcf9903fd1.png" class="slide"></a>
+              </div>
+
+              <div class="mySlides fade">
+                <a href="https://www.krups.at/p/evidence-one-ea895n/8010000805" target="_blank">
+     <h3 class="slider-heading">EVIDENCE ONE</h3>
+     <h3><span class="second-line">VIELFÄLTIGE KAFFEE-SPEZIALITÄTEN</span></h3>
+     <img src="https://image.email.groupeseb.com/lib/fe3111717564047c7d1d76/m/2/f009af65-faa2-4b19-b60f-37b80a1e05ab.png" class="slide">
+
+      </a>
+              </div>
+
+              <div class="mySlides fade">
+                <a href="https://www.krups.at/p/cook4me-touch-wifi-cz9128/7211004349" target="_blank">
+     <h3 class="slider-heading">COOK4ME TOUCH</h3>
+     <h3><span class="second-line">DER ERSTE MULTIKOCHER MIT WLAN</span></h3>
+     <img src="https://image.email.groupeseb.com/lib/fe3111717564047c7d1d76/m/2/bf0d2622-396e-40c4-b543-2e68bebb16bd.png" class="slide"></a>
+              </div>
+
+            </div>
+            <div style="text-align:center;margin-top: 2rem;">
+              <span class="dot"></span>
+              <span class="dot"></span>
+              <span class="dot"></span>
+            </div>
+          </div>
+          <div>
+            <form class="form-background-color" id="squeeze-page" action="https://cloud.email.krups.at/Backend" method="post"  >
+               <input name="submitted" type="hidden" value="true" />
+
+
+ <!-- RECAPTCHA -->
+
+              <input type="hidden" id="g-recaptcha-response" name="g-recaptcha-response">
+              <input type="hidden" id="recaptchaLength" name="recaptchaLength">
+
+ <!-- RECAPTCHA -->
+
+
+              <h1 class="primary-headline">GitHub Headline X <br class="hide"/>Y <br class="hide"/>Z</h1>
+             <!-- <select  id="gender" name="gender"  required >
+                <option value="" disabled selected hidden>Anrede</option>
+                <option value="male">Herr</option>
+                <option value="female">Frau</option>
+                <option value="undefined">Divers</option>
+              </select>
+              <input type="text"  id="firstname" name="firstname" placeholder="Vorname *" required />
+              <input type="text"  id="lastname" name="lastname" placeholder="Nachname *" required />
+              <input type="email"  id="email" name="email" placeholder="E-Mail-Adresse *" required />
+
+
+
+
+
+
+
+              <button  class="g-recaptcha" data-sitekey="6Lc6-eAZAAAAAOozu11Dv5ejGmVOd91zmRjkGznC" data-callback='callback' data-action='submit'>Jetzt anmelden</button>
+
+
+
+
+
+
+              <p class="cta-text"><strong>Datenschutz *</strong></p>
+              <div class="checkbox-flex">
+                <input type="checkbox" name="consent" id="consent" required="required" value="true" />
+                <label for="check">Ja! Ich erkläre mich damit einverstanden, von Groupe Seb Deutschland („Groupe SEB“) per E-Mail über personalisierte Angebote und Informationen zu Produkten von Tefal (Küchengeräte, Kochgeschirr, Küchenhelfer und Produkte zur Wäschepflege) informiert zu werden. Ich erkläre mich außerdem damit einverstanden, dass Groupe SEB diesen Newsletter auf Grundlage meiner zuletzt getätigten Interaktionen in Zusammenhang mit den Marken von Groupe SEB personalisiert, Analysen durchführt und meine E-Mail-Adresse für Marketingzwecke an Social Media (Facebook) weiterleitet. Ich kann den Newsletter jederzeit abbestellen und die obige Einwilligung widerrufen. Weitere Informationen (einschließlich Informationen zum Widerruf Ihrer Einwilligung) entnehmen Sie den <a href ="http://legal.groupeseb.com/Core/AT/de/DU.html#policies" target="_blank">Datenschutzbestimmungen</a> von Groupe SEB. Dieses Angebot gilt nur für neue Nutzer.<br />
+                  *Individueller Rabattcode für eine Bestellung auf Krups.de. Kein Mindestbestellwert &amp; zeitlich unbegrenzt gültig.
+                </label>
+              </div> -->
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+  </main>
+  <script>
+    let slideIndex = 0;
+    showSlides();
+
+    function showSlides() {
+      let i;
+      let slides = document.getElementsByClassName("mySlides");
+      let dots = document.getElementsByClassName("dot");
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      slideIndex++;
+      if (slideIndex > slides.length) {
+        slideIndex = 1
+      }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex - 1].style.display = "block";
+      dots[slideIndex - 1].className += " active";
+      setTimeout(showSlides, 3000); // Change image every 2 seconds
+    }
+  </script>
+   <script runat="client">
+      function callback() {
+        return new Promise(function(resolve, reject) {
+          if (grecaptcha === undefined) {
+              alert('Recaptcha non definition');
+              location.replace("https://cloud.email.krups.at/Error");
+          }
+          var response = grecaptcha.getResponse();
+          console.log(response);
+          if (!response) {
+              alert('Could not get recaptcha response');
+              location.replace("https://cloud.email.krups.at/Error");
+          }
+          document.getElementById("recaptchaLength").value = response.length;
+          let form = jQuery('#squeeze-page');
+   let reportValidity = form[0].reportValidity();
+   if (reportValidity) {
+    //$('#submit').hide();
+    form.submit();
+   } else {
+   }
+        })(); //end promise
+      }
+    </script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  <script src="https://www.tefal-info.com/vendors/jquery/jquery-3.3.1.min.js"></script>
+</body>
+
+</html>
